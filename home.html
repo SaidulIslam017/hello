@@ -1,0 +1,12 @@
+
+{% extends "Home/base.html"%}
+{% block content %}
+    {% for post in posts %}
+
+        <h1>{{ post.title }}</h1>
+        <p><h2>{{ post.author }} on {{ post.content }}</h2>></p>
+        <p>Date: {{ post.date_posted }}</p>
+
+    {% endfor %}
+{% endblock content %}
+
